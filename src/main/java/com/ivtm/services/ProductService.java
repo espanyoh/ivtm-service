@@ -23,11 +23,11 @@ public class ProductService {
     }
 
     public List<Product> retrieve() {
-        List<Product> products = productRepository.findAllByOrderByStartDateAsc();
+        List<Product> products = productRepository.findAllByOrderByCodeAsc();
         int count = 0;
         for (Product product : products) {
             count++;
-            product.setCount(count);
+            //product.setCount(count);
         }
         return products;
     }

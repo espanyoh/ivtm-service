@@ -1,26 +1,24 @@
 package com.ivtm.models;
 
+import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
 public class Product {
-	private int count;
 	private String id;
 	private String category;
-	private String eventName;
-	private Date startDate;
-	private Date endDate;
-	private String location;
+	private String code;
+	private String name;
+	private String color;
+	private String size;
 	private String description;
-
-	public int getCount() {
-		return count;
-	}
-
-	public void setCount(int count) {
-		this.count = count;
-	}
+	private Integer stock;
+	private Integer otwNumber;
+	private BigDecimal sell;
+	private BigDecimal buyYuan;
+	private BigDecimal costOfGoods;
+	private Boolean isPreorder;
 
 	public String getId() {
 		return id;
@@ -38,36 +36,36 @@ public class Product {
 		this.category = category;
 	}
 
-	public String getEventName() {
-		return eventName;
+	public String getCode() {
+		return code;
 	}
 
-	public void setEventName(String eventName) {
-		this.eventName = eventName;
+	public void setCode(String code) {
+		this.code = code;
 	}
 
-	public Date getStartDate() {
-		return startDate;
+	public String getName() {
+		return name;
 	}
 
-	public void setStartDate(Date startDate) {
-		this.startDate = startDate;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public Date getEndDate() {
-		return endDate;
+	public String getColor() {
+		return color;
 	}
 
-	public void setEndDate(Date endDate) {
-		this.endDate = endDate;
+	public void setColor(String color) {
+		this.color = color;
 	}
 
-	public String getLocation() {
-		return location;
+	public String getSize() {
+		return size;
 	}
 
-	public void setLocation(String location) {
-		this.location = location;
+	public void setSize(String size) {
+		this.size = size;
 	}
 
 	public String getDescription() {
@@ -78,9 +76,51 @@ public class Product {
 		this.description = description;
 	}
 
-	public String getButton() {
-		String btnHTML = "<input type='button' class='btn btn-default' id='viewBtn" + count + "' onclick=\"window.location='event-view-share.html?share=true&id="+this.getId()+"'\" value='View'/>";
-		return  btnHTML;
+	public Integer getStock() {
+		return stock;
 	}
 
+	public void setStock(Integer stock) {
+		this.stock = stock;
+	}
+
+	public Integer getOtwNumber() {
+		return otwNumber;
+	}
+
+	public void setOtwNumber(Integer otwNumber) {
+		this.otwNumber = otwNumber;
+	}
+
+	public BigDecimal getSell() {
+		return sell;
+	}
+
+	public void setSell(BigDecimal sell) {
+		this.sell = sell;
+	}
+
+	public BigDecimal getBuyYuan() {
+		return buyYuan;
+	}
+
+	public void setBuyYuan(BigDecimal buyYuan) {
+		this.buyYuan = buyYuan;
+	}
+
+	public BigDecimal getCostOfGoods() {
+		return costOfGoods;
+	}
+
+	public void setCostOfGoods(BigDecimal costOfGoods) {
+		this.costOfGoods = costOfGoods;
+	}
+
+	public Boolean getPreorder() {
+		return isPreorder;
+	}
+
+	public void setPreorder(Boolean preorder) {
+		isPreorder = preorder;
+	}
 }
