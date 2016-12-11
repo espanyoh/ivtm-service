@@ -10,14 +10,11 @@ public class Product {
 	private String category;
 	private String code;
 	private String name;
-	private String color;
-	private String size;
 	private String description;
 	private Integer stock;
 	private Integer otwNumber;
-	private BigDecimal sell;
-	private BigDecimal buyYuan;
-	private BigDecimal costOfGoods;
+	private BigDecimal price;
+	private BigDecimal cost;
 	private Boolean isPreorder;
 
 	public String getId() {
@@ -52,22 +49,6 @@ public class Product {
 		this.name = name;
 	}
 
-	public String getColor() {
-		return color;
-	}
-
-	public void setColor(String color) {
-		this.color = color;
-	}
-
-	public String getSize() {
-		return size;
-	}
-
-	public void setSize(String size) {
-		this.size = size;
-	}
-
 	public String getDescription() {
 		return description;
 	}
@@ -92,28 +73,20 @@ public class Product {
 		this.otwNumber = otwNumber;
 	}
 
-	public BigDecimal getSell() {
-		return sell;
+	public BigDecimal getPrice() {
+		return price;
 	}
 
-	public void setSell(BigDecimal sell) {
-		this.sell = sell;
+	public void setPrice(BigDecimal price) {
+		this.price = price;
 	}
 
-	public BigDecimal getBuyYuan() {
-		return buyYuan;
+	public BigDecimal getCost() {
+		return cost;
 	}
 
-	public void setBuyYuan(BigDecimal buyYuan) {
-		this.buyYuan = buyYuan;
-	}
-
-	public BigDecimal getCostOfGoods() {
-		return costOfGoods;
-	}
-
-	public void setCostOfGoods(BigDecimal costOfGoods) {
-		this.costOfGoods = costOfGoods;
+	public void setCost(BigDecimal cost) {
+		this.cost = cost;
 	}
 
 	public Boolean getPreorder() {
